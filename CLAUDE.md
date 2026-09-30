@@ -78,3 +78,14 @@ Before considering a task complete:
 - Ensure only intended files changed.
 
 Do not write placeholder or fake tests just to make checks pass. If no tests exist for the area you changed, say so.
+
+## Definition of Done
+
+A task is complete only when all of the following are true:
+
+- Verify the implementation after making a change.
+- Run relevant tests or validation.
+- Review the final `git diff`.
+- Ensure no secrets are exposed or committed.
+- Ensure only intended files were modified.
+- Update documentation when project behavior changes.
