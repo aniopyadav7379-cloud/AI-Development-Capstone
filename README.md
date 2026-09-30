@@ -38,12 +38,16 @@ All AI-generated changes are reviewed by the developer before being committed.
 
 ## Development Workflow
 
-1. Define the task and its scope.
-2. Have the AI assistant inspect the relevant files and propose the smallest appropriate change.
-3. Implement the change.
-4. Run tests or validation and review `git diff`.
-5. Commit using Conventional Commits.
-6. Push and open a pull request or merge, as appropriate.
+Every change in this repository follows the same sequence:
+
+1. **Plan the task.** Define the goal and its scope before touching any files, and identify the smallest appropriate change.
+2. **Inspect the existing repository before making changes.** Read the relevant files and understand the current state, including `README.md` and `CLAUDE.md`, so nothing is assumed or duplicated.
+3. **Use AI assistance when appropriate.** Use Claude Code or Cursor as a collaborator for drafting, refactoring, or review, following the rules in [`CLAUDE.md`](./CLAUDE.md). The developer stays in control of design decisions.
+4. **Implement changes incrementally.** Work in small, focused steps and avoid modifying unrelated files.
+5. **Run relevant tests and validation.** Run whatever tests or checks apply to the change. If none exist yet for that area, say so rather than adding placeholder tests.
+6. **Review the Git diff.** Run `git diff` and confirm that only the intended files changed and that no secrets are included.
+7. **Create a Conventional Commit.** Commit with a clear message such as `docs: improve README`, using the types listed under [Development Conventions](#development-conventions).
+8. **Push completed changes to GitHub.** Push once the work is finished and reviewed, and open a pull request or merge as appropriate.
 
 ## Repository Structure
 
