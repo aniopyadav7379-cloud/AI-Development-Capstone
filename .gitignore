@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+.yarn/cache/
+.yarn/install-state.gz
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+.turbo/
+.parcel-cache/
+*.tsbuildinfo
+
+# Test and coverage output
+coverage/
+.nyc_output/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Caches
+.cache/
+.eslintcache
+.npm/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
